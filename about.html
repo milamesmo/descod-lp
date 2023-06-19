@@ -5,39 +5,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mila Mesmo Art Studio</title>
-    <link rel="stylesheet" type="text/css" href="about.css">
-    <link rel="shortcut icon" href="IMAGENS/girl.ico" type="IMAGE/X-ICON">
+    <link rel="shortcut icon" href="IMAGENS/logo2.jpg" type="IMAGE/X-ICON">
+    <link rel="stylesheet" type="text/css" href="base.css">
 </head>
 
+<style>
+.grid {
+display: grid;
+min-height: 800px;
+border: 5px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  border: 0px solid  rgb(234, 182, 245);
+ 
+}
+
+.item1{
+    border: 1px solid  rgb(234, 182, 245);
+background-color: rgb(255, 255, 255);
+text-align: center;
+max-width: 300px;
+max-height: 300px;
+align-self: center;
+justify-self: right;
+font-family: 'Courier New', Courier, monospace;
+font-size: 20px;
+}
+
+.item2 {
+border: 1px solid  rgb(234, 182, 245);
+color: black;
+background-image: url(/IMAGENS/me.jpg);
+width: 500px;
+height: 600px;
+align-self: center;
+justify-self: left;
+}
+
+.gap{
+gap: 30px;
+}
+
+</style>
+
+
 <body>
-<div class="header">
-    <div class="icon"><a href="index.html"><img src="IMAGENS/logo.jpg" width="45" height="45"></a></div>
-
-    <ul>
-        <li><a href="contact.html">Contato</a></li>
-        <li><a href="shop.html">Encomendas</a></li>
-        <li><a href="about.html">Sobre</a></li>
-        <li><a href="index.html">Home</a></li>
-
-
-
-    </ul>
-</div>
-</div>
+    <div class="header">
+        <div class="icon"><a href="index.html"><img src="IMAGENS/logo2.jpg" width="45" height="45"></a></div>
     
-    <h1>Mila Mesmo Art Studio</h1> 
+        <ul>
+            <li><a href="contact.html">Contato</a></li>
+            <li><a href="ilustra.html">Ilustrações</a></li>
+            <li><a href="about.html">Sobre</a></li>
+            <li><a href="index.html">Home</a></li>
     
-    <h2>Oi! meu nome é Camila</h2>
-<pre>
-Mas pode me chamar de Mila ou Camis, tenho 25 anos,
- sou ilustradora e apaixonada por café.
-
-Engenheira Civil por formação e artista de alma, estou em
- uma jornada de autoconhecimento, ao lado de um pug
-  chamado Jake. 
-</pre>
-
-<img src="IMAGENS/about_me.jpg" width="200" height="300">
-</body>
-<footer>Criado por: Camila Abegg
-</footer>
+    
+    
+        </ul>
+    </div>
+    </div>
+    <div class="grid container gap">
+        <div class="item1"> Meu nome é Camila, tenho 25 anos 
+            sou ilustradora e apaixonada por café.
+               
+               Engenheira Civil por formação e artista de alma, estou em
+                uma jornada de autoconhecimento, ao lado de um pug
+                 chamado Jake. </div>
+        <div class="item2"></div>
+    </div>
+       
+    </body>
+    <footer class="footer">© CAMILA NUNES 2023  All Rights Reserved</footer>
+    </html>

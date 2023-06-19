@@ -1,52 +1,91 @@
-.Header {
-    background: #fafafa;
-    box-align: right;
-    position: fixed;
-    size: 10%, 100%;
-  }
-  
-  .icon {
-    align-content: left;
-    position: fixed;
-  }
-  
-  ul {
-    list-style-type: none;
-    margin: 2;
-    padding: 0;
-    overflow: hidden;
-    background-color: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-  }
-  
-  li {
-    float: right;
-  }
-  
-  li a {
-    display: inline-block;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover {
-    background-color: #000000;
-    border-left: 1px solid rgb(255, 255, 255);
-    border-right: 1px solid rgb(255, 255, 255);
-    color: #fff;
-  }
-
-  .body {
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
-    font-size: 12px;
-  }
-  
   .h1 {
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
     font-size: 18px;
   }
+
+  /*GRID*/
+
+  .grid {
+    display: grid;
+    margin-top: 100px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row: 1fr;
+    justify-items: center;
+  }
+
+  .gap {
+    gap: 10px;
+  }
+
+  .box1 {
+    min-width: 400px;
+    max-width: 400px;
+    padding: 20px;    
+  }
+
+  .box2 {
+    min-width: 400px;
+    max-width: 400px;
+  }
+
+  .box3{ min-width: 400px;
+    max-width: 400px;
+  }
+
+  .box5 {
+    display: Grid;
+    min-width: 100%;
+    min-height: 500px;
+    background-color: rgb(234, 182, 245);
+   align-items: center;
+   justify-content: center;
+  }
+
+  /*FORM*/
+
+  form {
+    max-width: 600px;
+    min-width: 300px;
+    margin: 0px;
+  }
+
+  input, textarea {
+    border:0; outline:0;
+    padding: 1em;
+    @include border-radius(8px);
+    display: block;
+    width: 100%;
+    font-family: 'Merriweather', sans-serif;
+  }
+
+  .title{
+  color: aliceblue;
+  }
+  
+    /*BUTTON*/
+
+    .button {
+      background-color: rgb(234, 182, 245);
+      background-size: 16px;
+      border-radius: 5px;
+      padding: 16px 30px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 16px;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      margin: 4px 2px;
+      cursor: pointer;
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      align-items: center;
+    }
+  
+    .button:hover {
+      background-color: #fff;
+      color:  rgb(234, 182, 245);
+      box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+      transition-duration: 0.4s;
+    }
+
