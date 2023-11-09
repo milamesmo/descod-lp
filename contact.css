@@ -18,25 +18,14 @@
     gap: 10px;
   }
 
-  .box1 {
+  .box {
     min-width: 400px;
-    max-width: 400px;
-    padding: 20px;    
-  }
-
-  .box2 {
-    min-width: 400px;
-    max-width: 400px;
-  }
-
-  .box3{ min-width: 400px;
     max-width: 400px;
   }
 
   .box5 {
     display: Grid;
     min-width: 100%;
-    min-height: 500px;
     background-color: rgb(234, 182, 245);
    align-items: center;
    justify-content: center;
@@ -46,7 +35,6 @@
 
   form {
     max-width: 600px;
-    min-width: 300px;
     margin: 0px;
   }
 
