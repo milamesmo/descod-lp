@@ -2,10 +2,16 @@
   padding: 0;
   margin: 0;
 }
-
+.containermenu {
+margin-top: 0;
+margin-left: 0;
+background-color: #fff;
+height: 60px;
+width: 100%;
+}
   .menu {
-    margin-left: 30px;
-    margin-top: 20px;
+    margin-left: 10px;
+    margin-top: 30px;
   }
 
   .menu .menu-faketrigger {
@@ -80,7 +86,7 @@ background-color: rgb(255, 255, 255);
     max-width: 45px;
     max-height: 45px;
     background-image: url(IMAGENS/logo2.jpg);
-    margin-left: 75px;
+    margin-left: 60px;
     margin-top: 10px;
   }
   
