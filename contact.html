@@ -6,35 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mila Mesmo Art Studio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="shortcut icon" href="IMAGENS/logo2.jpg" type="IMAGE/X-ICON">
     <link rel="stylesheet" type="text/css" href="contact.css">
     <link rel="stylesheet" type="text/css" href="base.css">
 </head>
 
 <body>
-    <div class="containermenu">
-    <div class="header">
-        <div class="icon"><a href="index.html"><img src="IMAGENS/logo2.jpg" width="45" height="45"></a></div>
+    <div id="navbar">
 
-        <nav class="menu">
-            <input type="checkbox" class="menu-faketrigger" />
-            <div class="menu-lines">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-    
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">Sobre</a></li>
-                <li><a href="ilustra.html">Ilustrações</a></li>
-                <li><a href="contact.html">Contato</a></li>
-            </ul>
+        <div class="containermenu">
+            <span id="menu-icon" class="material-symbols-outlined size-40" onclick="toggleMenu()">menu</span>
+            <nav id="menu-nav" class="menunav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Sobre</a></li>
+                    <li><a href="ilustra.html">Ilustrações</a></li>
+                    <li><a href="contact.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    <div class="icon"><a href="index.html"><img src="IMAGENS/logo2.jpg" width="45" height="45"></a></div> 
     </div>
-    </div>
-    </div>
-    </div>
-</div>
     <div class="grid gap">
 <div class="box">
             <h2>Localização</h2>
@@ -84,15 +78,16 @@ para conhecer os detalhes da produção</pre>
     </p>
     </div>
     </div>
+    <footer class="footer">© CAMILA NUNES 2023 All Rights Reserved</footer>
 
-
-
-
-
+    <script>
+        const menuNav = document.querySelector('#menu-nav')
+        function toggleMenu() {
+            menuNav.style.display = menuNav.style.display != 'block' ? 'block' : 'none'
+        }
+    </script>
 </body>
 
 
-<footer class="footer">© CAMILA NUNES 2023 All Rights Reserved</footer>
-</body>
 
 </html>

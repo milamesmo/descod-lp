@@ -8,6 +8,7 @@
     <meta name="keywords" content="Ilustração, artstudio, arte">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mila Mesmo Art Studio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="home.css">
     <link rel="stylesheet" type="text/css" href="base.css">
     <link rel="shortcut icon" href="IMAGENS/logo2.jpg" type="IMAGE/X-ICON">
@@ -15,33 +16,36 @@
 
 
 <body>
-    <div class="containermenu"><div class="header">
-        <div class="icon"><a href="index.html"><img src="IMAGENS/logo2.jpg" width="45" height="45"></a></div>
-        <nav class="menu">
-            <input type="checkbox" class="menu-faketrigger" />
-            <div class="menu-lines">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-    
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">Sobre</a></li>
-                <li><a href="ilustra.html">Ilustrações</a></li>
-                <li><a href="contact.html">Contato</a></li>
-            </ul>
+    <div id="navbar">
+
+        <div class="containermenu">
+            <span id="menu-icon" class="material-symbols-outlined size-40" onclick="toggleMenu()">menu</span>
+            <nav id="menu-nav" class="menunav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Sobre</a></li>
+                    <li><a href="ilustra.html">Ilustrações</a></li>
+                    <li><a href="contact.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    <div class="icon"><a href="index.html"><img src="IMAGENS/logo2.jpg" width="45" height="45"></a></div> 
     </div>
-    </div>
-    
-    </div>
-    </div>
-</div>
     <div class="parallax h1">
+        <div class="slider">
+
+        </div>
         <h1>MilaMesmo Art Studio</h1>
     </div>
 
-    <footer class="footer">© CAMILA NUNES 2023  All Rights Reserved</footer>
+    <footer class="footer">© CAMILA NUNES 2023 All Rights Reserved</footer>
+    <script>
+        const menuNav = document.querySelector('#menu-nav')
+        function toggleMenu() {
+            menuNav.style.display = menuNav.style.display != 'block' ? 'block' : 'none'
+        }
+    </script>
 </body>
-</html>
 
+</html>
