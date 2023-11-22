@@ -11,25 +11,19 @@
 </head>
 
 <style>
-.grid {
-display: grid;
-min-height: 800px;
-border: 5px;
-}
-
-.container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  border: 0px solid  rgb(234, 182, 245);
+.containerabout {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
  
 }
 
 .item1{
-    border: 1px solid  rgb(234, 182, 245);
+border-left: 3px solid  rgb(0, 0, 0);
+padding: 15px;
 background-color: rgb(255, 255, 255);
-text-align: center;
-max-width: 300px;
+text-align: left;
+max-width: 400px;
 max-height: 300px;
 align-self: center;
 justify-self: right;
@@ -38,11 +32,11 @@ font-size: 20px;
 }
 
 .item2 {
-border: 1px solid  rgb(234, 182, 245);
+border: 0;
 color: black;
 background-image: url(IMAGENS/me.jpg);
-width: 500px;
-height: 600px;
+width: 30%;
+height: 80%;
 align-self: center;
 justify-self: left;
 }
@@ -75,15 +69,18 @@ gap: 30px;
     </div>
 </div>
     </div>
-    <div class="grid container gap">
-        <div class="item1"> Meu nome é Camila, tenho 25 anos 
-            sou ilustradora e apaixonada por café.
+    <div class="containerabout">
+        <div class="item1">
+            <h3>Olá! Meu nome é</h3>
+               <h1> CAMILA ABEGG</h1>
+            tenho 25 anos, sou ilustradora e apaixonada por café.
                
                Engenheira Civil por formação e artista de alma, estou em
                 uma jornada de autoconhecimento, ao lado de um pug
                  chamado Jake. </div>
-        <div class="item2"></div>
+        <img src="IMAGENS/me.jpg" class="item2"></div>         
     </div>
+    
     <footer class="footer">© CAMILA NUNES 2023  All Rights Reserved</footer>
     <script>
         const menuNav = document.querySelector('#menu-nav')
