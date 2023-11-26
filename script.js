@@ -20,10 +20,7 @@ const imgList = [
 
 let currImg = 0;
 
-sendbtn.addEventListener("click", sendMsg);
-function sendMsg() {
-alert('Mensagem enviada');
-}
+
 
 leftbtn.addEventListener("click", prevImg);
 function translateImg(span) {
