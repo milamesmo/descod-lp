@@ -57,20 +57,22 @@
     /*BUTTON*/
 
     .button {
+      align-items: center;
+      justify-content: center;
+      text-align: center;
       background-color: rgb(234, 182, 245);
-      background-size: 16px;
       border-radius: 5px;
-      padding: 16px 30px;
+      padding: 12px;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       font-size: 16px;
       color: white;
-      text-align: center;
       text-decoration: none;
-      display: inline-block;
-      margin: 4px 2px;
+      display: flex;
+      width: 80px;
+      margin: 20px 2px;
       cursor: pointer;
       box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-      align-items: center;
+      
     }
   
     .button:hover {

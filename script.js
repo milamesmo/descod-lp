@@ -5,6 +5,7 @@ const menuNav = document.querySelector('#menu-nav')
 
 const leftbtn = document.querySelector('#left-btn');
 const rightbtn = document.querySelector('#right-btn');
+const sendbtn = document.querySelector('#sendmsg');
 
 const img1 = document.querySelector('#image1');
 const img2 = document.querySelector('#image2');
@@ -19,15 +20,14 @@ const imgList = [
 
 let currImg = 0;
 
+sendbtn.addEventListener("click", sendMsg);
+function sendMsg() {
+alert('Mensagem enviada');
+}
+
 leftbtn.addEventListener("click", prevImg);
 function translateImg(span) {
     wrap.style.transform = 'translateX(' + span + 'px)'
-}
-
-
-function prevImg() {
-    alert("hi");
-
 }
 
 rightbtn.addEventListener("click", nextImg);
@@ -81,3 +81,4 @@ function prevImg() {
     }
 
 }
+
