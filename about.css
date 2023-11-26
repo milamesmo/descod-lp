@@ -1,0 +1,46 @@
+.containerabout {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+   
+  }
+  
+  .item1{
+  margin-left: 500px;
+  border-left: 3px solid  rgb(234, 182, 245);
+  padding: 15px;
+  background-color: rgb(255, 255, 255);
+  text-align: left;
+  max-width: 400px;
+  max-height: 300px;
+  align-self: center;
+  justify-self: right;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  color: rgb(147, 146, 146);
+  box-shadow: 20px 20px 50px -30px rgb(234, 182, 245);
+  }
+  
+  .item2 {
+  border: 0;
+  color: black;
+  background-image: url(IMAGENS/me.jpg);
+  width: 30%;
+  height: 80%;
+  align-self: center;
+  justify-self: left;
+  }
+  
+  .gap{
+  gap: 30px;
+  }
+
+  @media screen and (max-width: 768px) {
+    
+    .containerabout{
+    display: block;
+    max-width: 100%;
+    max-height: 600px;
+    }
+
+  }
